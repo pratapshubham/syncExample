@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SynActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/llField"
+        >
+
+        <EditText
+            android:id="@+id/edt_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_edit"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:layout_margin="10dp"
+            />
+        <EditText
+            android:id="@+id/edt_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_edit"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llField"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit"
+            android:layout_marginRight="90dp"
+            android:layout_marginLeft="90dp"
+            android:padding="5dp"
+            android:text="ADD"
+            android:textAllCaps="true"
+            />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit"
+            android:layout_marginRight="90dp"
+            android:layout_marginLeft="90dp"
+            android:padding="5dp"
+            android:text="Update"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            />
+
+        <Button
+            android:id="@+id/btn_sync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit"
+            android:layout_marginRight="90dp"
+            android:layout_marginLeft="90dp"
+            android:padding="5dp"
+            android:text="Sync"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
